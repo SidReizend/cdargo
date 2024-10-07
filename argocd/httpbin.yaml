@@ -3,6 +3,10 @@ kind: Application
 metadata:
   name: httpbin
   namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: "kennethreitz/httpbin"
+    argocd-image-updater.argoproj.io/helm.image-tag: "httpbin.image"
+    argocd-image-updater.argoproj.io/write-back-method: "git:secret:github-token"
 spec:
   project: default
   source:
