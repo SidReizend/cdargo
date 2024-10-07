@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://gitlab.com/sidreizend/argoops.git'
-    path: argo-cd
+    repoURL: 'https://github.com/SidReizend/cdargo.git'
+    path: cdargo
     targetRevision: main
   destination:
     server: 'https://kubernetes.default.svc'
